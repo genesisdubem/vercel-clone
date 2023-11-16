@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vercel-Challenge</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/assets/vercel-icon.png">
+    <script src="https://kit.fontawesome.com/83a8491caf.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['', 'Clicks', 'Views'],
+          ['',  1000,      1000],
+          ['',  1500,      1700],
+          ['',  2000,       2100],
+          ['',  3000,      4000]
+        ]);
+
+        var options = {
+          title: '',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+    <!-- first page -->
+    <section class="head">
+        <div class="navbar">
+            <img src="/assets/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9IlZlcmNlbCBsb2dvdHlwZSIgaGVpZ2h0PSIyMiIgcm9sZT0iaW1nIiB2aWV3Qm94PSIwIDAgMjgzIDY0Ij48cGF0aCBkPSJNMTQxLjY4IDE2LjI1Yy0xMS4wNCAw.svg" class="logo">
+            <nav>
+                <ul>
+                    <li class="feat"><a href="#">Features <i class="fa-solid fa-chevron-down"></i></a></li>
+                    <li><a href="#">Docs</a></li>
+                    <li><a href="#">Templates</a></li>
+                    <li><a href="#">Integrations</a></li>
+                    <li><a href="#">Enterprise</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+            </nav>
+            <div class="right">
+                <a href="#">Contact</a>
+                <div class="contact"></div>
+            </div>
+            <div class="icon">
+                <!-- <img src="/assets/menu.png" alt=""> -->
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+       
+    </section>
+    <div class="next">
+        <span class="comf"><img src="/assets/next-removebg-preview.png" alt="">2023</span> <p>Join Us for the <span>Live Keynote</span> on <span>October 26 at 10am PT.</span></p> <button>Get your ticket <img src="/assets/chavender.svg" alt=""></button>
+    </div>
+    <section class="body">
+        <div class="ship">
+            <div class="gradient">
+                <img class="vercel-img" src="https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/4JmubmYDJnFtstwHbaZPev/23caf8c05363419bb2b94c6c53299cb0/og-dark.png" alt="">
+                <div class="row">
+                    <div class="column-1">
+                        <p>
+                            Vercel’s Frontend Cloud provides the developer
+                             experience and infrastructure to <span>build</span><span>scale</span> ,
+                              and <span>secure</span> a faster, more personalized Web.
+                        </p>
+                    </div>
+                    <div class="column-2">
+                        <button class="btn"> <svg aria-label="Vercel logomark" height="14" role="img" style="width:auto;overflow:visible" viewBox="0 0 74 64"><path d="M37.5896 0.25L74.5396 64.25H0.639648L37.5896 0.25Z" fill="#fff"></path></svg>Start Deploying</button>
+                        <button class="btnn">Get a Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="develop">
+            <h2>DEVELOP WITH YOUR FAVOURITE TOOLS <img src="/assets/big-caret.svg" alt=""> <br> LAUNCH GLOBALLY, INSTANTLY <img src="/assets/internet-dev.svg" alt=""> KEEP PUSHING <img src="/assets/stand.svg" alt=""></h2>
+        </div>
+        <div class="web-best">
+            <div class="web-cover">
+                <div class="row-1">
+                    <h2>The Web's best</h2>
+                    <div class="one">
+                        <div class="flex">
+                            <button class="ai">AI</button>
+                            <button>Apps</button>
+                        </div>
+                        <button>Marketing</button>
+                        <button>E-commerce</button>
+                    </div>
+                </div>
+                <div class="wheit">
+                    <div class="row-2">
+                        <h3><img src="/assets/openAi.svg"></h3>
+                        <h3><img src="/assets/runaway.svg" alt=""></h3>
+                        <h3><img src="/assets/replicate.svg" alt=""></h3>
+                    </div>
+                    <div class="row-3">
+                        <h3><img src="/assets/cohere.svg" alt=""></h3>
+                        <h3><img src="/assets/viable.svg" alt=""></h3>
+                        <h3><img src="/assets/antrophic.svg" alt=""></h3>
+                    </div>
+                </div>
+                <div class="web-text">
+                    <p><span>Quickstart templates.</span> You can deploy an AI app in seconds on Vercel, using our pre-built templates.</p>
+                    <p><span>Edge & Serverless ready.</span> Wrangle the unique compute requirements of AI responses, without additional infrastructure complexity.</p>
+                    <p><span>Zero-config streaming.</span> Easily stream long-running LLM responses for a better user experience.</p>
+                </div>
+            </div>
+        </div>
+        <div class="git">
+            <div class="git-row">
+                <div class="git-column1">
+                    <div class="deploy">
+                        <div class="localhost">
+                            <h3><img style="color: gray;" src="/assets/caret-left.svg" alt=""> Git-connected Deploys</h3>
+                            <h2>From localhost to https, in seconds. <br><span style="color: #666; font-weight: 500;">Deploy from Git or your CLI.</span></h2>
+                        </div>
+
+                        <div class="layer">
+                            <div class="underlay">
+                                <p>
+                                     <div aria-hidden="true" class="deploy-visual_window__m_aZm deploy-visual_terminal__pDD2n"><div class="stack_stack__iZkUS stack deploy-visual_trafficLights__0AWhC" data-version="v1" style="--stack-flex:initial;--stack-direction:row;--stack-align:stretch;--stack-justify:flex-start;--stack-padding:0px;--stack-gap:4px" data-colored="false" style="background: transparent;"><div class="deploy-visual_trafficLight__VkHwM"></div><div class="deploy-visual_trafficLight__VkHwM"></div><div class="deploy-visual_trafficLight__VkHwM"></div></div><div class="stack_stack__iZkUS stack" data-version="v1" style="--stack-flex:initial;--stack-direction:column;--stack-align:stretch;--stack-justify:flex-start;--stack-padding:0px;--stack-gap:4px"><div class="text_wrapper__i87JK deploy-visual_codeLine__Qu1os text_monospace___Hyeq" data-version="v1" style="--text-color:var(--ds-gray-1000);--text-size:0.75rem;--text-line-height:1rem;--text-letter-spacing:initial;--text-weight:400"><span data-dim="true">▲ ~ vercel-site/ </span>git push</div><div class="text_wrapper__i87JK deploy-visual_codeLine__Qu1os text_monospace___Hyeq" data-version="v1" style="--text-color:var(--ds-gray-1000);--text-size:0.75rem;--text-line-height:1rem;--text-letter-spacing:initial;--text-weight:400">Enumerating objects: 1, done.</div><div class="text_wrapper__i87JK deploy-visual_codeLine__Qu1os text_monospace___Hyeq" data-version="v1" style="--text-color:var(--ds-gray-1000);--text-size:0.75rem;--text-line-height:1rem;--text-letter-spacing:initial;--text-weight:400">Counting objects: 100% (1/1), done.</div><div class="text_wrapper__i87JK deploy-visual_codeLine__Qu1os text_monospace___Hyeq" data-version="v1" style="--text-color:var(--ds-gray-1000);--text-size:0.75rem;--text-line-height:1rem;--text-letter-spacing:initial;--text-weight:400">Writing objects: 100% (1/1), 72 bytes, done.</div><div class="text_wrapper__i87JK deploy-visual_codeLine__Qu1os text_monospace___Hyeq" data-version="v1" style="--text-color:var(--ds-gray-1000);--text-size:0.75rem;--text-line-height:1rem;--text-letter-spacing:initial;--text-weight:400">Total 1 (delta 0), reused 0 (delta 0).</div><div class="text_wrapper__i87JK deploy-visual_codeLine__Qu1os text_monospace___Hyeq" data-version="v1" style="--text-color:var(--ds-gray-1000);--text-size:0.75rem;--text-line-height:1rem;--text-letter-spacing:initial;--text-weight:400">To github.com:vercel/vercel-site.git</div><div class="text_wrapper__i87JK deploy-visual_codeLine__Qu1os text_monospace___Hyeq" data-version="v1" style="--text-color:var(--ds-gray-1000);--text-size:0.75rem;--text-line-height:1rem;--text-letter-spacing:initial;--text-weight:400">&nbsp;&nbsp;&nbsp;<!-- -->21326a9..81663c3 main -&gt; main</div></div></div>
+                                </p>
+                            </div>
+                            <div class="overlay">
+                                <div class="visual-cursor"><img style="background-color: transparent;width: 8px;" src="/assets/padlock.svg">vercel.com</div>
+                                <div class="grid">
+                                    <h4>What will you ship?</h4>
+                                </div>
+                            </div>
+                        </div>
+                   
+                    </div>
+                </div>
+                <div class="git-column2">
+                  <div class="collab">
+                    <div class="chat"><p><img src="/assets/chat.svg"> Collabrative pre-production</p></div>
+                    <div class="every">
+                        <h2><span>Every deploy is remarkable.</span> Chat with <br> your team on real, production-grade UI, not just designs.</h2>
+                    </div>
+                  </div>
+                  <div class="button">
+                    <div class="comment-visual">
+                        Swapped out the <button style="border: none;">button</button> for <br>
+                        some variants we needed
+                    </div>
+                    <div class="comment-visuals">
+                        How about this instead?
+                        <div class="mariana-left">
+                            Mariana
+                        </div>
+                    </div>
+                    <div class="comment-visual">
+                        I like it. Does this work with <br>
+                        the brand tweaks @almonk?
+                        <div class="mariana-right">
+                            Rauno
+                        </div>
+                    </div>
+                    <div class="comment-visuals">
+                        This looks great
+                    </div>
+                  </div>
+                </div>
+            </div>
+           <div class="frontend-obs">
+            <!-- <div id="curve_chart" style="width: 100%; height: 550px"></div>
+            <div class="front-text">
+                <h2><img style="background: transparent;" src="/assets/chart.svg">Frontend Observability</h2>
+                <h1><span>Privacy-friendly, lightweight Analytics.</span>Upgrade your post-launch workflow with actionable, real-time insights.</h1>
+            </div> -->
+            <img src="/assets/my chart.png" width="100%">
+           </div>
+           <div class="instant-spaces">
+            <div class="instant">
+                <div class="instant-row">
+                    <div class="instant-rollback">
+                       <div class="roll-text">
+                        <h2><img style="background: transparent;" src="/assets/retry.svg">Instant Rollbacks</h2>
+                        <h1><span>Go ahead, deploy on Friday.</span> Instantly rollback to a working deployment.</h1>
+                       </div>
+                       <div class="vercelbox">
+                            <div class="box0ne">
+                            <div class="site-one">
+                                <div class="site">
+                                    <p>vercel-site/<span style="color: #000; background-color: transparent;">jvjb4ynna</span></p>
+                                    <small style="background-color: transparent;">1 day ago</small>  
+                                </div>
+                                <p class="query"><img style="background-color: transparent;" src="/assets/query.svg"> ba5f55f Update Bento box design</p>
+                            </div>
+                            <div class="site-two">
+                                <img style="background-color: transparent;" src="/assets/time-removebg-preview.png">
+                            </div>
+                            </div>
+                            <div class="arrow">
+                                <img style="background-color: transparent;" src="/assets/arrow.svg">
+                            </div>
+                            <div class="boxtwo">
+                                <div class="site-one">
+                                    <div class="site">
+                                        <p>vercel-site/<span style="color: #000; background-color: transparent;">jvjb4ynna</span></p>
+                                        <small style="background-color: transparent;">10 min ago</small>  
+                                    </div>
+                                    <p class="query"><img style="background-color: transparent;" src="/assets/query.svg"> bx012mm Fix ESLint error on query</p>
+                                </div>
+                                <div class="site-two">
+                                    <img style="background-color: transparent;" src="/assets/secondtime-removebg-preview.png">
+                                </div>
+                                </div>
+                       </div>
+                    </div>
+                    <div class="space">
+                        <div class="space-column">
+                            <h2 style="font-size: 14px;"><img src="/assets/space.svg"> Spaces</h2>
+                            <h1><span>Move fast, don’t break things.</span> Keep quality high while maintaining velocity with Enterprise Monorepos.</h1>
+                            <div class="spacebox">
+                                <div class="compass">
+                                    <h2>compass</h2>
+                                    <div class="combox">
+                                        <p>Excellent</p>
+                                        <img src="/assets/deci-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="combox">
+                                        <p>Excellent</p>
+                                        <p style="font-weight: 600;">34</p>
+                                    </div>
+                                    <div class="combox">
+                                        <p>Excellent</p>
+                                        <p style="font-weight: 600;">12</p>
+                                    </div>
+                                </div>
+                                <div class="run">
+                                    <h2>run</h2>
+                                    <div class="combox">
+                                        <p>Time saved <br><small>This week</small></p>
+                                        <p style="font-weight: 600;">213d</p>
+                                    </div>
+                                    <div class="combox">
+                                        <p>Cache Hit/Miss <br><small>This week</small></p>
+                                        <p style="font-weight: 600;">91.1%</p>
+                                    </div>
+                                    <div class="combox">
+                                        <p>Weekly runs <br><small>212 failures</small></p>
+                                        <img src="/assets/weekly-removebg-preview.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+           <div class="much">
+            <div class="much-row">
+                <h1>There's so much more.</h1>
+                <div class="storage">
+                    <button class="stobox">
+                        <h2><img src="/assets/storage.svg"> Storage</h2>
+                    </button>
+                    <button class="stobox">
+                        <h2><img src="/assets/observability.svg">Observability</h2>
+                    </button>
+                </div>
+                <div class="storage">
+                    <button class="stobox">
+                        <h2><img src="/assets/security.svg"> Security</h2>
+                    </button>
+                    <button class="stobox">
+                        <h2><img src="/assets/enterprise.svg">Enterprise</h2>
+                    </button>
+                </div>
+            </div>
+           </div>
+        </div>
+        <div class="infrastructure">
+            <div class="deploy-box">
+                <h1><span>Deploy once, deliver everywhere.</span> When you push code to Vercel, we make it instantly available across the planet.</h1>
+                <div class="btn-row">
+                    <button class="black">More infrastructure</button>
+                    <button class="white">Learn about Enterprise</button>
+                </div>
+            </div>
+            <div class="deployed-img">
+                <img src="/assets/deployed.svg" alt="">
+                <div class="text"><p>deployed</p><img class="retry" src="/assets/retry.svg" alt=""></div>
+            </div>
+            <div class="bridge">
+                <div class="render">
+                    <div class="app">
+                        <div class="page">
+                            <small>app/users/page.tsx</small>
+                            <i class="fa-regular fa-copy"></i>
+                        </div>
+                        <div class="export">
+                            <ol>
+                                <li>export default async function Page() {</li>
+                                <li> const data = await sql`SELECT * from USERS`;</li>
+                                <li> </li>
+                                <li>  return (</li>
+                                <li> </li>
+                                <li> </li>
+                                <li> </li>
+                                <li> </li>
+                                <li> </li>
+                                <li> </li>
+                                <li> </li>
+                                <li> </li>
+                                <li> </li>
+                                <li> </li>
+                            </ol>
+                        </div>
+                        <div class="client">
+                            <h1>
+                                <span>Bridging the best of Client and Server Rendering.</span> Experience seamless integration,
+                                 optimized performance, and reduced bundle sizes like never before.
+                            </h1>
+                            <button class="whit">More About rendering</button>
+                        </div>
+                    </div>
+                    <div class="stripe">
+                        <div class="visual_circle">
+                            <img src="/assets/data-removebg-preview.png" alt="">
+                        </div>
+                        <h1><span>All the data.</span> Connect with content, commerce or database platforms.</h1>
+                        <button class="whit">Discover integrations</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reliability">
+            <h1>Reliability you can count on.</h1>
+            <div class="uptime-row">
+                <div class="shortflex">
+                    <div class="shorttext1">
+                        <h2><img src="/assets/scale.svg"> Elastic scalability</h2>
+                        <p>Handle unbelievable scale without a sweat, whether you’re on Fortune 500, or it’s your launch day.</p>
+                    </div>
+                    <div class="shorttext">
+                        <h2><img src="/assets/rock-security.svg"> Rock-solid security</h2>
+                        <p>Infrastructure designed to automatically mitigate DDoS attacks and protect your information.</p>
+                    </div>
+                </div>
+                <div class="reliability-up">
+                    <h1>99.99% Uptime</h1>
+                </div>
+            </div>
+            <div class="uptime-row2">
+                <div class="shorttext1">
+                    <h2><img src="/assets/internet-arrow.svg"> Global performance</h2>
+                    <p>Automatically route traffic to over 100 edge locations around the globe, for a fast site, anywhere in the world.</p>
+                </div>
+                <div class="shorttext">
+                    <h2><img src="/assets/user.svg"> Users-first protection</h2>
+                    <p>Vercel automatically caches your site to ensure that even if a backend service goes down, your site stays up.</p>
+                </div>
+                <div class="shorttext">
+                    <h2><img src="/assets/serverless.svg"> Serverless Storage</h2>
+                    <p>Accelerate development with databases for the fastest frontends.</p>
+                </div>
+            </div>
+            <div class="frame">
+                <div class="frameway">
+                    <div class="framtext">
+                        <h1>Your Frame work, your way.</h1>
+                    </div>
+                    <div class="way">
+                        <div class="fram">
+                            <div class="img">
+                                <img src="/assets/frame N.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="fram">
+                            <div class="img">
+                                <img src="/assets/flower.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="fram">
+                            <div class="img">
+                                <img src="/assets/triangle.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="fram">
+                            <div class="img">
+                                <img src="/assets/super.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="frameway2">
+                    <div class="fram">
+                       <div class="img">
+                        <img src="/assets/pyramid.svg" alt="">
+                       </div>
+                    </div>
+                    <div class="fram">
+                        <div class="img">
+                            <img src="/assets/g-frame.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="framo">
+                       <div class="img">
+                        <img src="/assets/fire-down.svg" alt="">
+                       </div>
+                    </div>
+                    <div class="fram">
+                       <div class="img">
+                        <img src="/assets/git-hub.svg" alt="">
+                       </div>
+                    </div>
+                    <div class="framo">
+                        <div class="img">
+                            <img src="/assets/a-shield.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="fram">
+                       <div class="img">
+                        <div class="circle">
+                            <i class="fa-solid  fa-arrow-right" id="arrow"></i>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="seconds">
+                    <div class="git-lab">
+                        <div class="git-hub">
+                            <h1>Deploy your first app in seconds.</h1>
+                            <div class="bucket">
+                                <p><img src="/assets/GitHub.svg"><img id="lab" src="/assets/GitLab.svg" alt=""> Deploy from <span>GitHub, GitLab, Bitbucket</span></p>
+                                <p><img src="/assets/range.svg" alt=""> <span>Wide range</span> support for the most popular frameworks</p>
+                                <p><img src="/assets/observability.svg" alt=""> <span>Previews</span> for every push</p>
+                                <p><img src="/assets/automatic.svg" alt=""> <span>Automatic HTTPS</span> for all your domains</p>
+                            </div>
+                            <div class="column-3">
+                                <button class="butn">Deploy for Free</button>
+                                <button class="butnn">View Pricing</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="templates">
+                        <div class="next-temp">
+                            <img id="middle" src="/assets/next.js.svg" alt="">
+                            <div class="tem-text">
+                                <h2>Next.js.Templates</h2>
+                            </div>
+                        </div>
+                        <div class="svelte">
+                            <img id="middle" src="/assets/svelte.svg" alt="">
+                            <div class="tem-text">
+                                <h2>Svelte Template</h2>
+                            </div>
+                        </div>
+                        <div class="react">
+                            <img id="middle" src="/assets/react.svg" alt="">
+                            <div class="tem-text">
+                                <h2>React Template</h2>
+                            </div>
+                        </div>
+                        <div class="nuxt">
+                            <img id="middle" src="/assets/nuxt.svg" alt="">
+                            <div class="tem-text">
+                                <h2>Nuxt Template</h2>
+                            </div>
+                        </div>
+                        <div class="astro">
+                            <img id="middle" src="assets/astro.svg" alt="">
+                            <div class="tem-text">
+                                <h2>Astro Template</h2>
+                            </div>
+                        </div>
+                        <div class="python">
+                            <img id="middle" src="/assets/python.svg" alt="">
+                            <div class="tem-text">
+                                <h2>Python Template</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+
+
+    <footer>
+        <div class="foot-row">
+            <div class="system-row">
+                <p><img src="/assets/copyright.svg"> &copy; 2023</p>
+                <a href="#">All sysytems normal.</a>
+            </div>
+            <div class="company-row">
+               <div class="preview">
+                <h2>Product</h2>
+                <ul>
+                    <li><a href="#">Previews</a></li>
+                    <li><a href="#">Infrastructure</a></li>
+                    <li><a href="#">Edge Functions</a></li>
+                    <li><a href="#">Analytics</a></li>
+                    <li><a href="#">Changelog</a></li>
+                </ul>
+               </div>
+               <div class="nextjs">
+                <ul class="special">
+                    <li><a href="#">Next.js</a></li>
+                    <li><a href="#">v0 <img id="arrowbox" src="/assets/arrowbox.svg" alt=""></a></li>
+                    <li><a href="#">Turbo</a></li>
+                    <li><a href="#">Enterprise/a></li>
+                    <li><a href="#">CLI % API</a></li>
+                </ul>
+               </div>
+               <div class="resource">
+                <h2>Resource</h2>
+                <ul>
+                    <li><a href="#">Docs</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">Integrations</a></li>
+                    <li><a href="#">Templates</a></li>
+                </ul>
+               </div>
+               <div class="expert">
+                <ul class="special">
+                    <li><a href="#">Expert</a></li>
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">K</a></li>
+                </ul>
+               </div>
+               <div class="career">
+                <h2>Company</h2>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Next.js comf <img id="arrowbox" src="/assets/arrowbox.svg" alt=""></a></li>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+               </div>
+            </div>
+            <div class="social-links">
+                <img src="/assets/moon.svg" alt="">
+                <img src="/assets/ligt.svg" alt="">
+                <img src="/assets/tele.svg" alt="">
+            </div>
+        </div>
+        <div class="useful-links">
+            <img src="/assets/git.svg" alt="">
+            <img src="/assets/twitter.svg" alt="">
+        </div>
+    </footer>
+</body>
+</html>
